@@ -1,0 +1,77 @@
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8eded;
+    padding: 15px 7%;
+    transition: 0.3s;
+}
+
+.logo{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.App_logo{
+
+    display: flex;
+    padding: 5px;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.App_logo h2{
+    font-size: 18px;
+    color: rgb(255, 234, 0);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.App_logo h2 span{
+    color: white;
+}
+
+ul{
+    flex: 1;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight :400px;
+    list-style: none;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    text-indent: 10%;
+    font-weight: 200;
+    font-style:normal;
+}
+
+ul li:hover{
+    color: rgb(255, 219, 17);
+}
+
+.toggle-icon{
+    width: 50px;  
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.dark .navbar{
+    background: #111;
+    color: #fff;
+}
+
+.login_icon{
+    font-size: 40px;
+}
+

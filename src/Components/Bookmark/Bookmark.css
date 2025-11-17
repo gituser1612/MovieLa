@@ -1,0 +1,62 @@
+.bookmark-page {
+  padding: 40px 5%;
+  background: #0a0a0a;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.bookmark-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.empty-msg {
+  color: #ccc;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.bookmark-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 25px;
+}
+
+
+.bookmark-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  transition: transform .25s ease, box-shadow .25s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.bookmark-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.movie-title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bookmark-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
+}
+
+.bookmark-card:hover img {
+  filter: brightness(1.05);
+}

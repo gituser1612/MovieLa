@@ -1,0 +1,93 @@
+.movie_listing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    margin: 20px 20px 40px 40px;
+    color: #fff6f6;
+}
+
+.movie_listing h1 {
+    margin-bottom: 10px;
+}
+
+.movie_listing hr {
+    width: 180px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: transparent;
+    box-shadow: 0px 0px 8px#dddddd;
+    margin-bottom: 20px;
+}
+
+.search_and_filter{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+#filterDropdown_genre{
+    
+    border-radius: 5px;
+    padding: 0 15px;
+    color: rgb(135, 133, 133);
+    background-color: transparent;
+    box-shadow: 0px 0px 8px#dddddd;
+    height: 2.5rem;
+    
+}
+
+#sort_dropDown{
+    border-radius: 5px;
+    padding: 0 15px;
+    color: rgb(135, 133, 133);
+    background-color: transparent;
+    box-shadow: 0px 0px 8px#dddddd;
+    height: 2.5rem;
+    
+}
+#filterDropdown_genre:hover{
+    background-color: transparent;
+    box-shadow: 0px 0px 8px#ffb700;
+}
+
+#filterDropdown_genre:focus{
+    background-color: #111;
+}
+#sort_dropDown:hover{
+    background-color: transparent;
+    box-shadow: 0px 0px 8px#fca800;
+}
+
+#sort_dropDown:focus{
+    background-color: #111;
+}
+
+#sort_dropDown:focus-visible{
+    outline: none;
+}
+
+.movie_listing_cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.movie_listing_cards  div  {
+    height: 320px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #222;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie_listing_cards div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(222, 143, 40, 0.4);
+}

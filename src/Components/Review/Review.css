@@ -1,0 +1,88 @@
+.review{
+    color: wheat;
+    overflow:scroll;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #333;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+}
+.review::-webkit-scrollbar{
+    display: none;
+}
+
+.review h1{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+
+}
+.review p{
+    margin-top: 10px;
+    color: #e8b604;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+
+.review_card{
+    height: 80%;
+    padding: 20px;
+    background: rgb(91, 90, 89) ;
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 20px;
+    ;
+}
+
+.review_card_star{
+    display: flex;
+    font-size: 20px;
+    color: #fec50a;
+    
+}
+
+.review_card_title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review_card_title p{
+    color: antiquewhite;
+
+}
+
+
+.user_review{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    width: 60px;
+    background: rgb(211, 200, 200);
+    border-radius: 100%;
+}
+.user_review h2{
+    color: aliceblue;
+    white-space: nowrap;
+    font-style: italic;
+}
+.user_review h3{
+    font-size: 10px;
+    white-space: nowrap;
+    font-style: oblique;
+    color: rgb(242, 250, 250);
+}
+.user_image{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 2px solid rebeccapurple;
+}
