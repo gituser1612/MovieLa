@@ -46,7 +46,6 @@ const MovieListing: React.FC<MovieListingProps> = () => {
 
       <div className="search_and_filter">
         <SearchBar setSearchText={setSearchText} />
-
         <select id="filterDropdown_genre" name="genre">
           <option value="">All genres</option>
           <option value="Action">Action</option>
@@ -58,7 +57,6 @@ const MovieListing: React.FC<MovieListingProps> = () => {
           <option value="Sci-Fi">Sci-Fi</option>
           <option value="Thriller">Thriller</option>
         </select>
-
         <select id="sort_dropDown" name="genre">
           <option value="">Sort By</option>
           <option value="Trending">Trending</option>
