@@ -8,21 +8,13 @@ import { Footer } from './Components/Footer/Footer';
 import Review from './Components/Review/Review';
 import Bookmark from './Components/Bookmark/Bookmark';
 
-
 const App:React.FC = () => {
-
-  const current_theme = localStorage.getItem('current_theme')
-  const [theme, setTheme] = useState<string>(current_theme ? current_theme : 'light');
-
   const[searchText,setSearchText]=useState<string>("");
 
-  useEffect(() => {
-    localStorage.setItem('current_theme', theme)
-  })
   return (
     <Router>
-      <div className={`container ${theme}`}>
-        <Navbar theme={theme} setTheme={setTheme} setSearchText={setSearchText} />
+      <div className='container'>
+        <Navbar setSearchText={setSearchText} />
         <Routes>
           <Route path='/latest' element={<MovieListing/>}/>
           <Route path='/review' element={<Review/>}/>

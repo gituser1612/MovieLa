@@ -5,13 +5,11 @@ import { TiUser } from "react-icons/ti";
 import { BiSolidCameraMovie } from "react-icons/bi";
 
 interface NavbarProps{
-  theme:string;
-  setTheme:React.Dispatch<React.SetStateAction<string>>;
   setSearchText:React.Dispatch<React.SetStateAction<string>>;
 }
 
 
-const Navbar:React.FC<NavbarProps> = ({theme,setTheme,setSearchText}) => {
+const Navbar:React.FC<NavbarProps> = ({setSearchText}) => {
 
 
   return (

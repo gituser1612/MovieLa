@@ -6,13 +6,14 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #111;
+}
+
 .container{
   width: full;
   min-height: 100vh;
   transition: 0.5s;
-}
-.container.dark{
-  background: #111
 }
 
 html,body{

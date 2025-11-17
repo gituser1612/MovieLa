@@ -5,7 +5,11 @@ import SearchBar from "../Navbar/Movie_Search/SearchBar";
 import {Movie} from "../../types/Movie";
 
 
-const MovieListing: React.FC = () => {
+interface MovieListingProps{
+  searchText?:string;
+}
+
+const MovieListing: React.FC<MovieListingProps> = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [searchText, setSearchText] = useState<string>("");
 
