@@ -1,14 +1,11 @@
 .hero {
   position: relative;
   height: 85vh;
+  width: 100vw;
   background-image: url('../../assets/coolie_movie.jpg'); 
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px ;
-  overflow: hidden;
-  margin-left: 40px;
-  margin: 40px;
 }
 
 
