@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./MovieListing.css";
-import MovieCard from "../MovieCard/MovieCard";
-import SearchBar from "../Navbar/Movie_Search/SearchBar";
-import {Movie} from "../../types/Movie";
+import MovieCard from "../MovieCard/MovieCard.jsx";
+import SearchBar from "../Navbar/Movie_Search/SearchBar.jsx";
+import type {Movie} from "../../types/Movie.jsx";
+import axios from "axios";
 
 
 interface MovieListingProps{
@@ -12,18 +13,32 @@ interface MovieListingProps{
 const MovieListing: React.FC<MovieListingProps> = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [searchText, setSearchText] = useState<string>("");
+  const [error,setError]=useState<boolean>(false)
 
   useEffect(() => {
     fetchMovies();
   }, []);
 
   const fetchMovies = async () => {
-    const response = await fetch(
+    try{
+      setError(false)
+    const response = await axios.get(
       "https://api.themoviedb.org/3/movie/popular?api_key=b3d6dfd7ec12793f1e126c6d58c2f285"
     );
-    const data = await response.json();
+    const data = await response.data;
     setMovies(data.results || []);
+      }catch(err){
+        setError(true)
+
+      }
+
   };
+
+  if (error){
+    return<div className="text-red-500">
+      Something went wrong while fetching Movies
+    </div>
+  }
 
   const filteredMovies = movies.filter((movie) => {
     const title =
