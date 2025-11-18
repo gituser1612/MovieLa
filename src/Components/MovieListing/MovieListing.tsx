@@ -4,6 +4,7 @@ import MovieCard from "../MovieCard/MovieCard.jsx";
 import SearchBar from "../Navbar/Movie_Search/SearchBar.jsx";
 import type {Movie} from "../../types/Movie.jsx";
 import axios from "axios";
+import ErrorWindow from "../ErrorWindow/ErrorWindow";
 
 
 interface MovieListingProps{
@@ -35,9 +36,7 @@ const MovieListing: React.FC<MovieListingProps> = () => {
   };
 
   if (error){
-    return<div className="text-red-500">
-      Something went wrong while fetching Movies
-    </div>
+    return <ErrorWindow/>
   }
 
   const filteredMovies = movies.filter((movie) => {
